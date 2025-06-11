@@ -193,7 +193,7 @@ function initializeSpotifyButton() {
     const spotifyCover = document.querySelector('.spotify-cover');
     
     // Replace with your actual Spotify playlist URL
-    const playlistUrl = 'https://open.spotify.com/playlist/YOUR_PLAYLIST_ID';
+    const playlistUrl = 'https://open.spotify.com/playlist/4dWB64xyktLTP3s2O6RR1K?si=VlSvZp7LT0KvlNVc31TyXA&pi=HJIeWCt-TvKI5';
     
     function openSpotifyPlaylist() {
         // Add click animation
@@ -365,40 +365,6 @@ function initializeLazyLoading() {
 
 // Initialize lazy loading when DOM is ready
 document.addEventListener('DOMContentLoaded', initializeLazyLoading);
-
-// ===== ACCESSIBILITY ENHANCEMENTS =====
-// Skip to main content for screen readers
-function addSkipLink() {
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main';
-    skipLink.textContent = 'Pular para o conteúdo principal';
-    skipLink.className = 'skip-link';
-    skipLink.style.cssText = `
-        position: absolute;
-        top: -40px;
-        left: 6px;
-        background: #d63384;
-        color: white;
-        padding: 8px;
-        text-decoration: none;
-        border-radius: 4px;
-        z-index: 1001;
-        transition: top 0.3s;
-    `;
-    
-    skipLink.addEventListener('focus', () => {
-        skipLink.style.top = '6px';
-    });
-    
-    skipLink.addEventListener('blur', () => {
-        skipLink.style.top = '-40px';
-    });
-    
-    document.body.insertBefore(skipLink, document.body.firstChild);
-}
-
-// Add skip link when DOM is ready
-document.addEventListener('DOMContentLoaded', addSkipLink);
 
 // ===== ERROR HANDLING =====
 window.addEventListener('error', (e) => {
