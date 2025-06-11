@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor ❤️</title>
+    <meta name="description" content="Um site especial para celebrar nosso amor">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Nosso Amor</h1>
+            <p class="subtitle">Uma história que começou em setembro de 2021 ❤️</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Photo Carousel Section -->
+        <section class="carousel-section">
+            <div class="container">
+                <h2 class="section-title">Nossos Momentos</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Foto anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <!-- Placeholder photos - to be replaced with actual photos -->
+                            <div class="polaroid active">
+                                <div class="polaroid-photo">
+                                    <img src="imagens/foto_primeiro_role.png" alt="Nosso primeiro momento" loading="lazy">
+                                </div>
+                                <div class="polaroid-caption">Nosso primeiro encontro ❤️</div>
+                            </div>
+                            
+                            <div class="polaroid">
+                                <div class="polaroid-photo">
+                                    <img src="imagens/foto_autodromo.png" alt="Momento especial" loading="lazy">
+                                </div>
+                                <div class="polaroid-caption">Momento especial juntos 💕</div>
+                            </div>
+                            
+                            <div class="polaroid">
+                                <div class="polaroid-photo">
+                                    <img src="imagens/foto_treino.png" alt="Aventura juntos" loading="lazy">
+                                </div>
+                                <div class="polaroid-caption">Nossa aventura 🌟</div>
+                            </div>
+                            
+                            <div class="polaroid">
+                                <div class="polaroid-photo">
+                                    <img src="imagens/foto_roda_gigante.png" alt="Sorriso lindo" loading="lazy">
+                                </div>
+                                <div class="polaroid-caption">Seu sorriso lindo 😊</div>
+                            </div>
+                            
+                            <div class="polaroid">
+                                <div class="polaroid-photo">
+                                    <img src="imagens/foto_praia.png" alt="Amor verdadeiro" loading="lazy">
+                                </div>
+                                <div class="polaroid-caption">Amor verdadeiro 💖</div>
+                            </div>
+
+                            <div class="polaroid">
+                                <div class="polaroid-photo">
+                                    <img src="imagens/foto_formatura.png" alt="Amor verdadeiro" loading="lazy">
+                                </div>
+                                <div class="polaroid-caption">Dia especial 💗</div>
+                            </div>
+
+                            <div class="polaroid">
+                                <div class="polaroid-photo">
+                                    <img src="imagens/foto_fofinha.png" alt="A gente combina" loading="lazy">
+                                </div>
+                                <div class="polaroid-caption">A gente combina 💗</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn carousel-btn-next" aria-label="Próxima foto">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0" aria-label="Ir para foto 1"></button>
+                    <button class="indicator" data-slide="1" aria-label="Ir para foto 2"></button>
+                    <button class="indicator" data-slide="2" aria-label="Ir para foto 3"></button>
+                    <button class="indicator" data-slide="3" aria-label="Ir para foto 4"></button>
+                    <button class="indicator" data-slide="4" aria-label="Ir para foto 5"></button>
+                    <button class="indicator" data-slide="5" aria-label="Ir para foto 6"></button>
+                    <button class="indicator" data-slide="6" aria-label="Ir para foto 7"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Time Counter Section -->
+        <section class="counter-section">
+            <div class="container">
+                <h2 class="section-title">Tempo Juntos</h2>
+                <p class="counter-subtitle">Desde 7 de setembro de 2021</p>
+                
+                <div class="time-counter">
+                    <div class="time-unit">
+                        <span class="time-number" id="years">0</span>
+                        <span class="time-label">Anos</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="months">0</span>
+                        <span class="time-label">Meses</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="days">0</span>
+                        <span class="time-label">Dias</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">0</span>
+                        <span class="time-label">Horas</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">0</span>
+                        <span class="time-label">Minutos</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">0</span>
+                        <span class="time-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Romantic Text Section -->
+        <section class="text-section">
+            <div class="container">
+                <div class="romantic-text">
+                    <h2 class="section-title">Para Você, Mô</h2>
+                    <div class="text-content">
+                        <p>
+                            Desde o dia que te conheci, cada insante ao seu lado tem sido uma descoberta,
+                            um novo motivo pra sorrir e agradecer por ter você na minha vida.
+                        </p>
+                        <p>
+                            Você trouxe cores que eu nem sabia que existiam, transformou momentos simples em 
+                            lembranças inesquecíveis, e me inspira a ser alguém melhor a cada dia.
+                        </p>
+                        <p>
+                            A cada segundo que passa, como mostra o contador ali em cima, o meu amor por você 
+                            só cresce. Você é e sempre vai ser a minha melhor escolha. Meu amor verdadeiro.
+                        </p>
+                        <p>
+                            Cada detalhe aqui carrega um pedacinho do que somos, com algumas das nossas melhores
+                            lembranças.
+                        </p>
+                        <p>
+                            Que venham muitos mais anos, meses, dias, horas, minutos e segundos juntos, 
+                            construindo nossa história de amor, uma página de cada vez.
+                        </p>
+                        <p class="signature">
+                            Com todo meu amor, sempre ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotify Section -->
+        <section class="spotify-section">
+            <div class="container">
+                <h2 class="section-title">Nossa Trilha Sonora</h2>
+                <div class="spotify-player">
+                    <div class="spotify-cover">
+                        <img src="imagens/foto_juntos.png" alt="Capa da playlist" loading="lazy" href="https://open.spotify.com/playlist/4dWB64xyktLTP3s2O6RR1K?si=VlSvZp7LT0KvlNVc31TyXA&pi=HJIeWCt-TvKI5" >
+                        <div class="play-overlay">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="spotify-info">
+                        <h3 class="playlist-title">Songs for My Love</h3>
+                        <p class="playlist-artist">Criada especialmente para você</p>
+                        <p class="playlist-description">Uma playlist com todas as músicas que me lembram de nós ❤️</p>
+                        <button class="spotify-btn" id="spotifyBtn" href="https://open.spotify.com/playlist/4dWB64xyktLTP3s2O6RR1K?si=VlSvZp7LT0KvlNVc31TyXA&pi=HJIeWCt-TvKI5">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM17.5 16.75C17.25 17.1 16.75 17.2 16.4 16.95C13.8 15.3 10.45 14.95 6.95 15.8C6.55 15.9 6.15 15.65 6.05 15.25C5.95 14.85 6.2 14.45 6.6 14.35C10.45 13.4 14.2 13.8 17.15 15.7C17.5 15.9 17.6 16.4 17.5 16.75ZM18.8 13.5C18.5 13.95 17.9 14.1 17.45 13.8C14.45 11.95 9.95 11.4 6.8 12.45C6.3 12.6 5.75 12.35 5.6 11.85C5.45 11.35 5.7 10.8 6.2 10.65C9.9 9.45 14.9 10.05 18.35 12.2C18.8 12.5 18.95 13.05 18.8 13.5ZM19.15 10.1C15.6 7.95 9.4 7.75 6.05 8.85C5.45 9.05 4.8 8.75 4.6 8.15C4.4 7.55 4.7 6.9 5.3 6.7C9.2 5.45 16.05 5.7 20.15 8.2C20.7 8.5 20.9 9.2 20.6 9.75C20.3 10.3 19.7 10.4 19.15 10.1Z" fill="currentColor"/>
+                            </svg>
+                            Ouvir no Spotify
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Feito com ❤️ para você • Dia dos Namorados 2025</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
